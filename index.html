@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Impreial Detailing</title>
+   
+    <script default async src="Js.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+
+    <!-- Bara de meniu -->
+        <nav id="bara">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img class=" img-rounded" width=" 154" height="106" src="./Poze/logo_poza-removebg-preview.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse d-flex flex-row-reverse bd-highlight align-self-end" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Acasă</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link p-2 bd-highlight" href="#">Serviciile noastre</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link p-2 bd-highlight" href="#">Contact</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle p-2 bd-highlight" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Munca noastră
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">Polish</a></li>
+                    <li><a class="dropdown-item" href="#">Curățare tapițerie</a></li>
+                    <li><a class="dropdown-item" href="#">Aplicare ceară protecție</a></li>
+                  </ul>
+                </li>
+                <button type="button" class="log mx-2 btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  Log In
+                </button>
+                <button type="button" class="log mx-2 btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  Sign Up
+                </button>
+              </ul>  
+            </div> 
+          </div>
+        </nav>
+      </nav>
+      
+      <!-- Modal Login -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Log In</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form>
+               <div class="mb-3">
+                  <label for="exampleFormControlInput1" class="form-label">Email address: </label>
+                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                </div>
+               
+
+                <div class="row g-3 align-items-center">
+                  <div class="col-auto">
+                    <label for="inputPassword6" class="   form-label">Password: </label>
+                  </div>
+                  <div class="col-auto">
+                    <input type="password" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline">
+                  </div>
+                  <div class="col-auto">
+                    <span id="passwordHelpInline" class="form-text">
+                      
+                    </span>
+                  </div>
+                </div>
+                             
+              </form>
+            </div>
+            <div class="d-grid gap-2 col-6 mx-auto my-3">
+              <button class="btn btn-primary" type="button">SinIn</button>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- Intro -->
+
+   <!-- Carusel -->
+
+   <div id="carouselExampleCaptions" class=" carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./Poze/bord.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./Poze/polish.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./Poze/4.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+    <!-- Despre noi -->
+  
+  <div class="despreNoi d-flex flex-column  p-4 align-items-center justify-content-center ">
+    <h1>Despre noi</h1>
+    <figure class="text-center ">
+      <blockquote class="blockquote">
+        <p>Imperial Detailing, cu sediul în Oradea, oferă servicii de înaltă calitate, folosind produse de calitate pentru obținerea unor rezultate uimitoare.</p>
+      </blockquote>
+      
+    </figure>
+
+  <!-- serviciile noastre -->
+
+  
+    <div class="card  d-flex align-items-center justify-content-center ">
+      <div class="cardsStyle mt-3 shadow p-3 mb-3 rounded" style="max-width: 740px;" >
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="./Poze/10.jpg" class="img-fluid rounded-start" alt="...">
+          </div>
+  
+          <div class="col-md-8 ">
+            <div class="card-body">
+              <h5 class="card-title">Curatare interior</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text"><small class="text-muted"></small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="card cardsStyle mb-3 shadow p-3 mt-3 rounded" style="max-width: 740px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="./Poze/polish.jpg" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Polish </h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text"><small class="text-muted"></small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="card cardsStyle mb-3 shadow p-3 mt-3 rounded" style="max-width: 740px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="./Poze/th.jpg" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class=" col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Aplicare Ceramica</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text"><small class="text-muted"></small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  <!-- Munca noastra  -->
+    <div class="row row-cols-2 row-cols-md-1 ">
+
+      <h2 class="d-flex justify-content-center m-5">Munca Noastra </h2>
+      <div class="d-flex flex-column  ">
+     
+        <div class=" d-flex flex-row  pb-4">
+          <div class="d-flex container">
+            <img src="Poze/poza_1.jpg" class=" zoom img-thumbnail image " alt="">
+            <div class="overlay">Polish</div>
+          </div>
+          <div class="container">
+            <img src="Poze/poza_2.jpg" class="zoom img-thumbnail image" alt="">
+            <div class="overlay">Polish</div>
+          </div>
+          <div class="container">
+            <img src="Poze/poza_3.jpg" class="zoom img-thumbnail image" alt="">
+            <div class="overlay">Polish</div>
+          </div>
+          <div class="container">
+            <img src="Poze/poza_4.jpg" class="zoom img-thumbnail image" alt="">
+            <div class="overlay">Polish</div>
+          </div>
+        </div>
+    
+    
+          <div class="d-flex flex-row">
+            <div class="container">
+              <img src="Poze/poza_5.jpg"  class="zoom img-thumbnail image" alt="">
+              <div class="overlay">Polish</div>
+            </div>
+            <div class="container">
+              <img src="Poze/poza_6.jpg" class="zoom img-thumbnail image" alt="">
+              <div class="overlay">Polish</div>
+            </div>
+            <div class="container">
+              <img src="Poze/poza_7.jpg" class="zoom img-thumbnail image" alt="">
+              <div class="overlay">Polish</div>
+            </div>
+            <div class="container">
+              <img src="Poze/poza_8.jpg"  class="zoom img-thumbnail image" alt="">
+              <div class="overlay">Polish</div>
+            </div>
+          </div>
+        </div>
+    </div>
+    
+ 
+<!-- Configurarea pretului -->
+<div class=" d-flex mb-3 shadow p-3 mt-3 rounded">
+  <form class="bgForm" >
+    <h2 class="d-flex justify-content-center my-4">Configurează-ți prețul</h2>
+    <div class=" d-flex my-2">
+      <label for="exampleInputEmail1" class="control-label mx-2 " >Name: </label>
+      <input type="name" class="form-control bgInput" id="exampleInputEmail1" aria-describedby="emailHelp" >
+      <div id="emailHelp" class="form-text"></div>
+    </div>
+
+    <div class="aliniereForm d-flex flex-row justify-content-center">
+      
+      <div class=" row g-3 mx-3 my-2 align-items-center">
+        <div class="col-auto">
+          <label for="inputPassword6" class="col-form-label">Email: </label>
+        </div>
+        <div class="col-auto">
+          <input type="email" id="inputPassword6" class="form-control bgimp " aria-describedby="passwordHelpInline">
+        </div>
+      </div>
+      <div class="row mx-5 my-2 g-3 align-items-center">
+        <div class="col-auto">
+          <label for="inputPassword6" class=" col-form-label">Număr de telefon: </label>
+        </div>
+        <div class="col-auto">
+          <input type="number" id="inputPassword6" class="form-control bgimp" aria-describedby="passwordHelpInline">
+        </div>
+      </div>
+    </div>
+
+    <div class=" d-flex justify-content-center m-3 row row-cols-4 row-cols-md-1 ">
+        <div>
+            <label  for="floatingSelectGrid">Alege tipul mașinii: </label>
+            <select class="form-select bgimpc" id="floatingSelectGrid" aria-label="Floating label select example">
+              <!-- <option selected>Open this select menu</option> -->
+              <option value="1">Mașină mică</option>
+              <option value="2">Mașină Suv</option>
+              <!-- <option value="3">Gip</option> -->
+            </select>
+        </div>
+     </div>
+
+     <div class="d-flex d-flex justify-content-evenly">
+      <div class="">
+        <div class="mb-4 d-flex flex-row justify-content-center ">
+          <input type="checkbox" class="form-check-input bgimp mx-2" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Polish intr-un singur pas</label>
+        </div>
+  
+        <div class="mb-3 d-flex">
+          <input type="checkbox" class="form-check-input bgimp mx-2" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Polish în 3 pași</label>
+        </div>
+        
+        <div class="mb-3  d-flex ">
+          <input type="checkbox" class="form-check-input bgimp mx-2" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Polish în mai mulți pași</label>
+        </div>
+      </div>
+      
+      <div class=""> 
+        <div class="mb-3  d-flex ">
+          <input type="checkbox" class="form-check-input bgimp mx-2" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Curățare interior</label>
+        </div>
+  
+        <div class="mb-3  d-flex ">
+          <input type="checkbox" class="form-check-input bgimp mx-2" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Aplicare ceară protectie pentru șase luni</label>
+        </div>
+  
+        <div class="mb-3 d-flex ">
+          <input type="checkbox" class="form-check-input bgimp mx-2" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Alicare ceară protecșie pentru doisprezece luni</label>
+        </div>
+      </div>
+      
+    </div>
+    
+
+    <div class="form-group mx-2 my-3 ">
+      <label for="inputlg">Comentarii:</label>
+      <input class="form-control input-lg bgimp" id="inputlg" type="text">
+    </div>
+
+
+      <div class="pret d-flex justify-content-end align-items-center me-5">
+        <p class="">0,00 Lei</p>
+      </div>
+         
+    <div class="d-flex my-3 p-3 justify-content-center">
+      <button type="submit" class="colorSubmitBtn ">Submit</button>
+    </div>
+  </form>
+
+  </div>
+</div>
+
+    <!-- recenzi -->
+    <!-- Get in touch -->
+    <div class="bgimpc my-5 ">
+      <div class=" d-flex justify-content-center ">
+      <h1>CONTACT</h1>
+    </div>
+
+    <div class="d-flex col justify-content-evenly ">
+     
+      <!-- Detalii -->
+      <div>
+      <div id="contact" class="mt-5">
+      <div class="contact_box2 d-flex col ">
+        <div>
+          <img class="img_contact" src="poze/ceas_3-removebg-preview.png" alt="">
+        </div>
+        <div class="mx-2">
+          <div class="">
+            <h5>Orar</h5>
+          <p>8:00-18:00</p>
+          <p>Luni-Vineri</p>
+          </div>
+        </div>
+      </div>
+      <div class="contact_box2 d-flex col">
+        <div>
+          <img class="img_contact" src="poze/contact-2-removebg-preview.png" alt="">
+        </div>
+        <div class="mx-2">
+          <div class="">
+            <h5>Contact</h5>
+            <p>0774 509 819</p>
+            <p>servicii@imperialdetailing.com</p>
+          </div>
+        </div>
+      </div>
+      <div class="contact_box2 d-flex col ">
+        <div class="">
+          <img class="img_contact" src="poze/location_2-removebg-preview (1).png" alt="">
+        </div>
+          <div class="mx-2">
+            <h5>Locatie</h5>
+            <p>Str. Ciheiului nr. 40</p>
+          </div>
+        </div>
+      </div>
+      </div>
+
+      <!-- Form -->
+
+      <form>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Nume</label>
+          <input type="text" class="form-control " id="exampleInputEmail1" size="50px" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Telefon</label>
+          <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        </div>
+        <div>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Email</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Mesaj</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+  
+        </div>
+        
+       <div class="d-flex justify-content-end">
+        <button type="submit" class="colorSubmitBtn mb-3">Trimite</button>
+       </div>
+      </form>
+
+
+
+
+      
+    </div>
+  </div>
+
+    <!-- location map -->
+   
+    <!-- footer -->
+
+    <div class=" footer d-flex flex-row align-items-center justify-content-around ">
+
+      <div class="contactFooter p-4 ">
+        <h5>Contact</h5>
+        <p>0774 509 819</p>
+        <p>servicii@imperialdetailing.com</p>
+        <h5>Program de lucru</h5>
+        <p>8:00 - 18:00</p>
+        <p>Luni - Vineri</p>
+      </div>
+
+      <div class="linkReference">
+        <div class="stileA d-flex flex-column align-items-start p-4 ">
+        <h5 class="px-2">Link-uri utile</h5>
+        <a href="#" class="p-2">Acasă</a>
+        <a href="#" class="p-2">Configurează-ți prețul</a>
+        <a href="#" class="p-2">Munca noastră</a>
+        <a href="#" class="p-2">Serviciile noastre</a>
+        <a href="#" class="p-2">Get in touch</a>
+        </div>
+      </div>
+
+      <div class="socialMediaIcon d-flex flex-column  ">
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-twitter"></a>
+          <a href="#" class="fa fa-youtube"></a>
+          <a href="#" class="fa fa-instagram"></a>
+      </div>
+      
+    </div>
+  </body>
+</html>
